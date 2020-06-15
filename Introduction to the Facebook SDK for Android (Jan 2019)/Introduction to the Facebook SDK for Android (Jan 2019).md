@@ -133,14 +133,14 @@ Figure 8 - Components of the Facebook SDK for Android
 As a developer, you can include the complete set of SDKs or just individual SDKs as needed. Only including the SDKs that your app needs is a simple way of managing the overall app size. The following table describes each SDK in more detail including a link to the related official documentation.
 
 Table 1 - Components of the Facebook SDK for Android
-|Component|Description| Documentation |
-|---|-----------|-----|---------------|
-|**Core APIs**|Core APIs that including Graph, App Events. Analytic APIs.| [Graph API](https://developers.facebook.com/docs/graph-api), [Facebook Analytics](https://developers.facebook.com/docs/analytics/implementation), [App Events](http://https://developers.facebook.com/docs/app-events/getting-started-app-events-android) |
-|**Login**|API for to login using Facebook, and requesting app permissions.| [The Facebook Login SDK](https://developers.facebook.com/docs/facebook-login) |
-|**Share**|API to share or send a messages.| [The Facebook Sharing SDK](https://developers.facebook.com/docs/sharing) |
-|**Places**|API to search for places, place discovery, location sharing, and geo-tagging. | [The Facebook Places SDK](https://developers.facebook.com/docs/places) |
-|**Messenger**|API API to share both links and media from your apps to Messenger, and enable bot chat extentions.| [The Facbeook Messenger SDK](https://developers.facebook.com/docs/messenger-expressions) |
-|**App Links**|API to deep link to content within the mobile app.| [The Facebook App Links SDK](https://developers.facebook.com/docs/applinks) |
+Component|Description| Documentation 
+---------|-----------|--------------
+**Core APIs**|Core APIs that including Graph, App Events. Analytic APIs.| [Graph API](https://developers.facebook.com/docs/graph-api), [Facebook Analytics](https://developers.facebook.com/docs/analytics/implementation), [App Events](http://https://developers.facebook.com/docs/app-events/getting-started-app-events-android)
+**Login**|API for to login using Facebook, and requesting app permissions.| [The Facebook Login SDK](https://developers.facebook.com/docs/facebook-login)
+**Share**|API to share or send a messages.| [The Facebook Sharing SDK](https://developers.facebook.com/docs/sharing)
+**Places**|API to search for places, place discovery, location sharing, and geo-tagging. | [The Facebook Places SDK](https://developers.facebook.com/docs/places)
+**Messenger**|API API to share both links and media from your apps to Messenger, and enable bot chat extentions.| [The Facbeook Messenger SDK](https://developers.facebook.com/docs/messenger-expressions)
+**App Links**|API to deep link to content within the mobile app.| [The Facebook App Links SDK](https://developers.facebook.com/docs/applinks)
 
 Visit Facebook's [Facebook for Android SDK documentation](https://developers.facebook.com/docs/android) for the complete, official documentation.
 
