@@ -14,7 +14,7 @@ In this article I cover an overview of the Facebook SDK for Android, how to inte
 Before you begin, you need to register your app with Facebook. The process of registering an application with Facebook and setting up the application is as follows.
 
 Figure 1 - Typical Steps for New Apps
-![setup-flow.jpg](resources/4B080A0605C71F7B4F224712439AB360.jpg =968x99)
+![setup-flow.jpg](resources/4B080A0605C71F7B4F224712439AB360.jpg)
 
 During application registration, the application is added, the app ID created, and the app settings properly defined and confifgured, including updating the Android string resource file with app id information, and setting the roles and test users for app testing.
 
@@ -23,7 +23,7 @@ During application registration, the application is added, the app ID created, a
 To register your application, go to [Facebook's Developer Website](https://developers.facebook.com) (https://developers.facebook.com). Click on **"Add New App"**.
 
 Figure 2 - Registering the App with Facebook
-![fbdebsite_newapp.png](resources/12D48BFEA3E3F5AFD84367D3A0CF5FBC.png =670x552)
+![fbdebsite_newapp.png](resources/12D48BFEA3E3F5AFD84367D3A0CF5FBC.png)
 
 Next, create the new App's ID.
 
@@ -32,7 +32,7 @@ Next, create the new App's ID.
 In the "Create a New App ID" dialog enter a **Display Name** and **Contact Email** for your application.
 
 Figure 3 - Create a New App ID
-![CreateNewAppID.png](resources/05D7F59EE113AA03F2C438C317CFAC60.png =716x327)
+![CreateNewAppID.png](resources/05D7F59EE113AA03F2C438C317CFAC60.png)
 
 Pressing the **Create App ID** button will generate the app ID and take you to the application's Dashboard.
 
@@ -45,16 +45,16 @@ On the top left of the Dashboard you will find a drop-down to navigate across yo
 You can view and manage the application development status, view the app's analytics, manage the app's basic and advanced settings, manage roles and test users, manage the app review process, and manage the Facebook products used by the app.
 
 Figure 4 - App Dashboard
-![fb-app-panel.png](resources/83234C61D7AEACEEF83FBC5E213007F7.png =2087x870)
+![fb-app-panel.png](resources/83234C61D7AEACEEF83FBC5E213007F7.png)
 
 You can press _Skip_, and go directly to the Basic and Advanced Settings. While at the Basic Settings, press **Add Platform** to add your Android App add your related website, as illustrated next.
 
 Figure 5 - Add Platform
-![add-platform.png](resources/0E04232975604435721BF36BEAA6D84D.png =955x41)
+![add-platform.png](resources/0E04232975604435721BF36BEAA6D84D.png)
 
 Press "**+ Add Platform**" and enter the requested information.
 
-![add-platform2.png](resources/9F1CA47ED209C771574CEBAFF60AE029.png =959x695)
+![add-platform2.png](resources/9F1CA47ED209C771574CEBAFF60AE029.png)
 
 In the Basic Settings screen enter the Google Play Package name, the Default Activity Class Name, and the key hashes for the app, as well as other settings such as enabling Single Sign-on and Deeplinking.
 
@@ -88,7 +88,7 @@ As in any software that you write, there is a development and testing phase, and
 You can create Test User directly within the App Dashboard in the Roles Tab. Click on the Add button next to Test Users.
 
 Figure 6 - Test Users
-![fb test users.png](resources/1DF6B316D07135241108C1ECABAD7869.png =1064x709)
+![fb test users.png](resources/1DF6B316D07135241108C1ECABAD7869.png)
 
 You can add more test users and edit test user's information, permissions, set expiration times and other, as needed.
 
@@ -111,7 +111,7 @@ In the SDK, Access Tokens is represented by `AccessToken`, a class that represen
 A typical login sequence is illustrated next. In this sequence, a user decides to login and grants permissions. Next, the app/SDK will pass the access request and permissions to Facebook. Once a user is authenticated, and the permissions are granted, the app receives a **User Access Token** that gives temporary access to Facebook APIs and user data. Default expiration period for _data access_ is 90 days.
 
 Figure 7 - Login Sequence
-![Login Sequence.png](resources/5E2ECF1CF8D70F102B7AAFD2E9E1D800.png =590x493)
+![Login Sequence.png](resources/5E2ECF1CF8D70F102B7AAFD2E9E1D800.png)
 
 Requesting and granting permissions gives the application access to user data or to operations such as sharing or updating basic information, or the friend's list. You can see the current access tokens associated with your account by visiting the [Access Token page](https://developers.facebook.com/tools/accesstoken).
 
@@ -128,7 +128,7 @@ The Facebook SDK for Android is a Java programming language on top of Facebook p
 The Facebook SDK for Android consists of a number of related SDKs that all together provide the collection of APIs to build social apps across Android, iOS, React Native, and others platforms. The Facebook SDK for Android consists of 7 related SDKs as illustrated next.
 
 Figure 8 - Components of the Facebook SDK for Android
-![android-sdk-diagram.jpg](resources/4570732402B59FFA92BA89C1087E4D17.jpg =469x428)
+![android-sdk-diagram.jpg](resources/4570732402B59FFA92BA89C1087E4D17.jpg)
 
 As a developer, you can include the complete set of SDKs or just individual SDKs as needed. Only including the SDKs that your app needs is a simple way of managing the overall app size. The following table describes each SDK in more detail including a link to the related official documentation.
 
@@ -200,7 +200,7 @@ Selecting individual SDKs will give you more control and flexibility over the mo
 Let's now look at a sample app. In this article we will explore an Android app with the views and layouts and functionallity as illustrated below. 
 
 Figure 9 - The Sample App
-![Screen Shot 2019-02-09 at 7.42.46 PM.png](resources/568BD65A9EFA3A739AC247A5F1D7609D.png =420x743)
+![Screen Shot 2019-02-09 at 7.42.46 PM.png](resources/568BD65A9EFA3A739AC247A5F1D7609D.png)
 
 In this sample app I show two different ways to login (using Facebook's `LoginButton` and using the Login API), how to get the user's basic profile information, how to get the user's friends list, how to reauthorize permissions, and two ways to share (using Facebook's `ShareDialog`, and using Facebook's `ShareButton`).
 
@@ -606,7 +606,7 @@ Check out Facebook's [Login for Android - Quickstart](https://developers.faceboo
 Facebook uses a [graph](https://en.wikipedia.org/wiki/Graph_(discrete_mathematics)) to represent user data, in what they called the _Facebook social graph_. To access the social graph, Facebook defined the [Graph API](https://developers.facebook.com/docs/graph-api/using-graph-api/). The following diagram illustrates the social graph.
 
 Figure 10 - The Social Graph
-![fb_social_graph.jpg](resources/E285FF58B63A8CCFBF57642B61D98D23.jpg =1113x508)
+![fb_social_graph.jpg](resources/E285FF58B63A8CCFBF57642B61D98D23.jpg)
 
 In Facebook's social there are:
 
