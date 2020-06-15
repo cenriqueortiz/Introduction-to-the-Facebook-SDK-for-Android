@@ -990,7 +990,7 @@ In this example, I only cover using `ShareLinkContent` content model.
 
 If your app is going to share binary attachments such as images, you need to define a `FacebookContentProvider`in the `AndroidManifest.xml`, as shown next.
 
-Listing X - Defining `FacebookContentProvider` in the AndroidManifest.xml
+Listing 23 - Defining `FacebookContentProvider` in the AndroidManifest.xml
 ```xml
 <provider android:authorities="com.facebook.app.FacebookContentProvider{@string/facebook_app_id}"
     android:name="com.facebook.FacebookContentProvider"
@@ -1005,7 +1005,7 @@ The Facebook SDK provides `com.facebook.share.widget.ShareButton`, a native butt
 
 First, let's cover the `ShareButton` view in the `main.xml` resource file.
 
-Listing 23 - The `ButtonView` for Using the Facebook `ShareButton`
+Listing 24 - The `ButtonView` for Using the Facebook `ShareButton`
 ```xml
 <com.facebook.share.widget.ShareButton
             android:id="@+id/fb_share_button"
@@ -1018,7 +1018,7 @@ Listing 23 - The `ButtonView` for Using the Facebook `ShareButton`
 
 Next, the following code snippet shows how to create a `ShareLinkContent` to share a basic hyperlink when the `ShareButton` is clicked and its click listerner is called.
 
-Listing 24 - Using the Facebook `ShareButton`
+Listing 25 - Using the Facebook `ShareButton`
 ```java
 /////////////////////////////////////////////////////////////////////////////////////////
 // The following code snippet uses the Facebook Share Button.
@@ -1049,7 +1049,7 @@ Another approach to sharing data is to use the `ShareDialog` directly.
 
 First, let's cover the `ButtonView` to trigger the sharing.
 
-Listing 25 - The `ButtonView` for Using the Share Dialog
+Listing 26 - The `ButtonView` for Using the Share Dialog
 ```xml
 <Button
   android:id="@+id/share_button"
@@ -1062,7 +1062,7 @@ Listing 25 - The `ButtonView` for Using the Share Dialog
 
 Next, is setting the click listener for the ButtonView, setting the FacebookCallback that is called when sharing completes successfully, is canceled or an error is encountered. When the button is clicked, the appropriate content model is created, in this case a `ShareLinkContent`, which is passed to the method `ShareDialog.show()` if the share dialog supports such content model.
 
-Listing 26 - Using the Facebook Share Dialog
+Listing 27 - Using the Facebook Share Dialog
 ```java
 /////////////////////////////////////////////////////////////////////////////////////////
 // The following code snippet uses the Facebook Share Dialog.
